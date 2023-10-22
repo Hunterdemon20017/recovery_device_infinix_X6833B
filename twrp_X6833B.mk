@@ -18,18 +18,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from X6833B device
-$(call inherit-product, device/infinix/X6833B/device.mk)
+# Inherit from X6710B device
+$(call inherit-product, device/infinix/X6710B/device.mk)
 
-PRODUCT_DEVICE := X6833B
-PRODUCT_NAME := twrp_X6833B
+PRODUCT_DEVICE := X6710
+PRODUCT_NAME := twrp_X6710
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := Infinix X6833B
+PRODUCT_MODEL := Infinix X6710
 PRODUCT_MANUFACTURER := infinix
 
 PRODUCT_GMS_CLIENTID_BASE := android-infinix
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vext_x6833b_h894-user 12 SP1A.210812.016 376418 release-keys"
+    PRIVATE_BUILD_DESC="vext_x6710_h894-user 12 SP1A.210812.016 376418 release-keys"
 
-BUILD_FINGERPRINT := Infinix/X6833B-GL/Infinix-X6833B:12/SP1A.210812.016/230711V1696:user/release-keys
+BUILD_FINGERPRINT := Infinix/X6710-GL/Infinix-X6710:12/SP1A.210812.016/230111V331:user/release-keys
